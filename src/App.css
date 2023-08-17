@@ -1,31 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container {
+  position: relative;
+  background-image: url("./assets/tambola-background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 105vh;
+  /* min-height: 100vh; */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; */
 }
 
-.App-link {
-  color: #61dafb;
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Change the opacity value as needed */
+  z-index: -1;
+}
+
+.gameBoard {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.currentNumberAndName {
+  position: absolute;
+  left: 26%;
+  color: red;
+  margin: 0px;
+  transition: opacity 1s ease-in-out, height 1s ease-in-out;
+  overflow: hidden;
+  opacity: 0;
+  animation: blinker 1s linear infinite;
+  text-align: center;
+  /* background-color: rgba(224, 113, 113, 0.415); */
+}
+
+.currentNumber {
+  font-size: 30rem;
+}
+
+.currentName {
+  font-size: 40px;
+}
+
+.visible {
+  opacity: 1;
+  height: auto;
+  padding: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+}
+
+.callNum {
+  left: 40%;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  background: linear-gradient(to right, #fc5056, #f59e84);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgb(255 0 0 / 38%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.callNum:hover {
+  transform: scale(1.05);
+}
+
+.call-button {
+  left: 37%;
+  position: relative;
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(to bottom right, #ff355e, #fd5e0f);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 15px rgb(255 0 0 / 38%);
+}
+
+.call-button:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(to bottom right, #ff355e, #fd5e0f);
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.call-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes App-logo-spin {

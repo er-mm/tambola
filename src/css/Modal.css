@@ -1,0 +1,410 @@
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+} */
+
+.image-container {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.corner1,
+.bp1,
+.odd1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.odd4 {
+  position: absolute;
+  top: 0;
+  left: 23%;
+  width: 22%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.odd5 {
+  position: absolute;
+  top: 0;
+  left: 55%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.odd6 {
+  position: absolute;
+  top: 32%;
+  left: 12%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.odd7 {
+  position: absolute;
+  top: 32%;
+  left: 33%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.even1 {
+  position: absolute;
+  top: 32%;
+  left: 55%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.odd8 {
+  position: absolute;
+  top: 32%;
+  left: 87%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.even2 {
+  position: absolute;
+  top: 32%;
+  left: 76%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.corner2,
+.odd2 {
+  position: absolute;
+  top: 0%;
+  left: 76%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.odd9 {
+  position: absolute;
+  top: 64%;
+  left: 66%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.even3 {
+  position: absolute;
+  top: 64%;
+  left: 44%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.even4 {
+  position: absolute;
+  top: 64%;
+  left: 23%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.even5 {
+  position: absolute;
+  top: 64%;
+  left: 0%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.corner3 {
+  position: absolute;
+  top: 64%;
+  left: 0%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.corner4,
+.bp2,
+.odd3 {
+  position: absolute;
+  top: 64%;
+  left: 88%;
+  width: 12%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.firstLine {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.secondLine {
+  position: absolute;
+  top: 32%;
+  left: 0%;
+  width: 100%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.thirdLine {
+  position: absolute;
+  top: 64%;
+  left: 0%;
+  width: 100%;
+  height: 36%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.breakfast {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 34%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.lunch {
+  position: absolute;
+  top: 0%;
+  left: 34%;
+  width: 32%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.dinner {
+  position: absolute;
+  top: 0%;
+  left: 66%;
+  width: 32%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+.fullHouse {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity here */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

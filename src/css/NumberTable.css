@@ -1,0 +1,39 @@
+table {
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.called {
+  /* background-color: #3498db; */
+  background-color: #e105fa;
+  color: #fff;
+  border-color: #f8ef2f;
+}
+
+.prevNum {
+  background-color: #f8ef2f;
+  color: rgb(229, 29, 29);
+  border-color: rgb(229, 29, 29);
+}
+
+.currNum {
+  background-color: #00a108;
+  color: rgb(255, 255, 255);
+}
+
+.number-table {
+  width: auto;
+  height: 80vh;
+  margin-top: 56px;
+  background-color: #dc8f8f;
+}

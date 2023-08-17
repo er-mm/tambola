@@ -1,0 +1,97 @@
+.winningPointsList {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.winningPoint {
+  margin: 2.5px 20px;
+  padding: 8px 20px;
+  width: 185px;
+  background-color: #8c00ffdb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.winningPointName {
+  margin: 2.5px 20px;
+  padding: 0px 20px;
+  width: 185px;
+  background-color: #1c3148;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid;
+  font-size: 28px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.winningPointInput {
+  width: 130px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  height: 45.8px;
+}
+
+.winningPointEmpty {
+  margin: 2.5px 0px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.winningPointss {
+  margin: 2.5px 20px;
+  padding: 8px 20px;
+  width: 185px;
+  background-color: #9522e6cc;
+  color: white;
+  border: 1px solid #6400aa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.winningPointssBtn {
+  background-color: #8309a7;
+  border: none;
+  width: 40px;
+  height: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+.winningLabel {
+  font-size: 16px;
+}
+
+.winningPoints {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 36%;
+}
+
+.heading {
+  font-size: 31px;
+  color: #000d71;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 11px;
+  background-color: #ffee58;
+  padding: 0px 10px;
+  border: 1px solid;
+}
