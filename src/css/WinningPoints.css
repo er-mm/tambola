@@ -33,6 +33,10 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.winningPointName:hover .tooltip {
+  display: block;
+}
+
 .winningPointInput {
   width: 130px;
 }
@@ -97,26 +101,24 @@
   border: 1px solid;
 }
 
-
-.tooltip:hover {
- position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(-50%);
-    background: #0000008a;
-    color: white;
-    padding: 5px;
-    border-radius: 4px;
-    z-index: 100;
-    width: inherit;
-    font-size: 15px;
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -70%;
+  background: #1d334b85;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 100;
+  border: 1px solid;
+  font-size: 15px;
 }
 
 .winnerNameLabel {
   text-overflow: ellipsis;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    display: inline-block;
-    width: 100%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  display: inline-block;
+  width: 100%;
 }

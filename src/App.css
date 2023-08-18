@@ -60,6 +60,32 @@
   padding: 0;
 }
 
+.header {
+  position: absolute;
+  font-size: 2rem;
+  margin: 10px;
+  color: #570a97;
+  background-color: #b96ff7;
+  border: 5px solid;
+  padding: 2px 15px;
+  border-radius: 16px;
+  animation: bounceAndColor 2s ease-in-out infinite;
+}
+
+@keyframes bounceAndColor {
+  0%,
+  100% {
+    transform: scale(1);
+    background-color: #c4a4e0bf;
+    color: #521783;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #905cc9;
+    color: white;
+  }
+}
+
 .callNum {
   left: 40%;
   position: relative;
@@ -80,6 +106,7 @@
 }
 
 .call-button {
+  margin-top: 20px;
   left: 37%;
   position: relative;
   display: inline-block;

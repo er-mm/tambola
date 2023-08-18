@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="container">
-      <header>Tambola</header>
+      <header className="header">T@Mb()|_A</header>
       <button onClick={callNumber} className="call-button">
         Call Number
       </button>
