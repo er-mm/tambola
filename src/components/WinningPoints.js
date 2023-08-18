@@ -32,7 +32,7 @@ const WinningPoints = () => {
 
   const winningPointsList = () => {
     return winningPtList.map(
-      ({ winningLabel, winningName, checked, winnerName }) => (
+      ({ winningLabel, winningName, checked, winnerName, isWinnerNameBig }) => (
         <div className="list" key={winningName}>
           <div className="winningPoint">
             <input
@@ -43,7 +43,7 @@ const WinningPoints = () => {
             <label className="winningLabel"> {winningLabel} </label>
           </div>
           {/* <div className="winningPoint">hello</div> */}
-          {winners(checked, winnerName, winningName)}
+          {winners(checked, winnerName, winningName, isWinnerNameBig)}
         </div>
       )
     );
@@ -57,17 +57,22 @@ const WinningPoints = () => {
   const addWinner = () => {
     const newList = winningPtList.map((list) => {
       if (list.winningName === winnerNameVal.winningName)
-        return { ...list, winnerName: winnerNameVal.winnerName };
+        return { ...list, winnerName: winnerNameVal.winnerName, isWinnerNameBig: winnerNameVal.winnerName.length > 10, };
       else return list;
     });
     setWinningPtList(newList);
   };
 
-  const winners = (checked, winnerName, winningName) => {
+  const winners = (checked, winnerName, winningName, isWinnerNameBig) => {
     if (checked && winnerName) {
       return (
         <div className="winningPointName">
-          <label>{winnerName}</label>
+        <label className="winnerNameLabel">{winnerName}</label>
+          {isWinnerNameBig && (<>
+            <div className="tooltip">
+              <label>{winnerName}</label>
+            </div>
+          </>)}
         </div>
       );
     } else if (checked) {

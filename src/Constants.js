@@ -5,6 +5,7 @@ export const winningPtLists = [
     winningLabel: "Corners",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "first and last digit of first and last row",
   },
   {
@@ -13,6 +14,7 @@ export const winningPtLists = [
     winningLabel: "First Line",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits of first row in ticket",
   },
   {
@@ -21,6 +23,7 @@ export const winningPtLists = [
     winningLabel: "Second Line",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits of second row in ticket",
   },
   {
@@ -29,6 +32,7 @@ export const winningPtLists = [
     winningLabel: "Third Line",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits of third row in ticket",
   },
   {
@@ -37,6 +41,7 @@ export const winningPtLists = [
     winningLabel: "Breakfast",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits of first three columns in ticket",
   },
   {
@@ -45,6 +50,7 @@ export const winningPtLists = [
     winningLabel: "Lunch",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits of 4, 5 and 6 columns in ticket",
   },
   {
@@ -53,6 +59,7 @@ export const winningPtLists = [
     winningLabel: "Dinner",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits of last three columns in ticket",
   },
   {
@@ -61,6 +68,7 @@ export const winningPtLists = [
     winningLabel: "Even Numbers",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All EVEN Numbers in ticket",
   },
   {
@@ -69,6 +77,7 @@ export const winningPtLists = [
     winningLabel: "Odd Numbers",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All ODD Numbers in ticket",
   },
   {
@@ -77,6 +86,7 @@ export const winningPtLists = [
     winningLabel: "Blood Pressure",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "Lowest and highest Number on ticket",
   },
   {
@@ -85,6 +95,7 @@ export const winningPtLists = [
     winningLabel: "Lucky Seven",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "Early Seven Numbers on ticket",
   },
   {
@@ -93,6 +104,7 @@ export const winningPtLists = [
     winningLabel: "Full House - WInner",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits in ticket",
   },
   {
@@ -101,6 +113,7 @@ export const winningPtLists = [
     winningLabel: "Full House - Runnerup",
     checked: false,
     winnerName: "",
+    isWinnerNameBig: false,
     description: "All Digits in ticket",
   },
 ];
