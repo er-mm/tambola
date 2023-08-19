@@ -4,7 +4,6 @@ import NumberTable from "./components/NumberTable";
 import Rules from "./components/Rules";
 import WinningPoints from "./components/WinningPoints";
 import { tambolaNumbers } from "./Constants";
-import tambolaBackgroundImage from "./assets/tambola-background-image.jpg";
 
 function App() {
   const [numbersCalled, setNumbersCalled] = useState([]);
